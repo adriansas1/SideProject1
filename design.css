@@ -113,9 +113,9 @@ body {
 
 .container .box-container{
     display: grid;
-    /* This is the code for căn hình vuông, khi chỉnh tấm hình to ra (từ 200px -> ~500px) và lúc kéo nhỏ màn hình lại 
-    hình vuông trắng sẽ không chứa hết được tấm hình 
-    vậy nên chỉnh minmax(270px, 1fr) lên minmax(600px, 1fr) để chứa hết đc tấm hình
+    /* This is the code for square align, when editing the image to size (from 200px -> ~500px) and when dragging to reduce the screen
+      The white square will not contain all the pictures
+      so you should adjust minmax(270px, 1fr) to minmax(600px, 1fr) to accommodate all the images
     */
     grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
     gap: 20px;
@@ -126,7 +126,7 @@ body {
     border-radius: 5px;
     background: #fff;
     text-align: center;
-    /* this is the code to căn tấm hình mấy bay giữa ô vuông trắng*/
+    /* here is the code for the plane picture in the middle of the white square */
     padding: 10px 10px;
 }
 
